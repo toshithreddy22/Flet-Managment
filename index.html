@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fleet Management Dashboard</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Drivers</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Tracking</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="stats">
+                <div class="card">
+                    <h2>Total Vehicles</h2>
+                    <p id="vehicleCount">120</p>
+                </div>
+                <div class="card">
+                    <h2>Active Drivers</h2>
+                    <p id="driverCount">75</p>
+                </div>
+                <div class="card">
+                    <h2>Fuel Consumption</h2>
+                    <p id="fuelUsage">540L / day</p>
+                </div>
+            </section>
+            <section class="tracking">
+                <h2>Vehicle Tracking</h2>
+                <div id="map"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
